@@ -11,7 +11,7 @@ class SaveData(object):
 		self.ip = arg
 		myclient=pymongo.MongoClient('mongodb://{}:27017/'.format(self.ip))
 		mydb=myclient['XianYu']
-		self.__mycol=mydb['Watches2']
+		self.__mycol=mydb['Watches']
 	def dbObj(self):
 		mycol=self.__mycol
 		return mycol
